@@ -1,0 +1,197 @@
+/* technical stuff - set sizing to border box method */
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing:inherit;
+}	
+
+body, article, footer {
+background-color: White;
+color: #111111;
+font-family: agency fb;
+margin-left: 16px;
+margin-right: 16px;
+max-width: 2048px;
+min-width: 256px;
+padding-top: 8px;
+padding-bottom: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+html {
+background: radial-gradient(circle, #38E5AB, #38C8E5 50%, #3872E5 50%, #75EF2E);
+background-size: 8px 8px;	
+}
+
+header p {
+float: left;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+}
+
+header h1 {
+font-size: 16px;
+text-align: right;
+}
+
+article {
+text-align: center;
+}
+
+section {
+background-color: #B577B5;
+padding-bottom: 24px;
+margin-bottom: 24px;
+min-height: 320px;
+padding-left: 24px;
+padding-right:  24px;
+}
+
+aside {
+background-color: #B577B5;
+}
+
+nav ul {
+list-style-type: none;
+background-color: #B577B5;
+font-family: agency fb;
+font-weight: bold;
+padding: 16px;
+}
+
+nav ul li {
+display: inline;
+border-right: 2px solid #111111;
+padding-right: 8px;
+padding-left: 8px;	
+}
+
+nav ul li:last-child {
+border-right: none;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #111111;
+}
+
+p.fun-fact {
+border:4px dashed
+#00AFEB;
+border-radius:10px;
+padding:8px;
+background-color: #C5EBFB;
+}
+
+p.fun-fact::before {
+color: Black;
+content: "FUN FACT: ";
+font-weight: bold;
+}
+
+table {
+font-size: 70%;
+border-collapse: collapse;
+width: 25%;
+}
+
+th, td {
+border: 1px solid #111111;
+padding: 5x;
+text-align: center;
+}
+
+th {
+background-color: #3DE1C0;
+}
+
+td {
+background-color: #B8B8B8;
+}
+
+nav ul li a {
+text-decoration: none;
+}
+
+nav ul li.selected {
+color: #606060;
+}
+
+nav ul li a:link {
+color: blue;
+}
+
+nav ul li a:visited {
+color: purple;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+}
+
+nave ul li a:active {
+text-decoration: underline;
+background-color: black;
+color: white;
+}
+
+img.small {
+float: left;
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
+}
+
+img.medium {
+float: left;
+max-width: 360px;
+width: 50%
+}
+
+img.large {
+width: 100%
+}
+
+aside h2 {
+text-align:center;
+}
+
+aside p.email {
+float:left;
+margin-top: 0px;
+}
+
+aside p.number {
+text-align:right;
+}
+
+body, section, img, aside, nav ul, article, footer {
+border: 2px solid Gray;
+border-radius:16px;
+}
+
+
+@media all and (min-width: 900px) {
+ article {
+ float: left;
+ width: 60%;
+ }
+ 
+ footer {
+ float: left;
+ padding-left: 24px;
+ width: 30%;
+ }
+
+ aside {
+ clear: both;
+ }
+}
+
+
+

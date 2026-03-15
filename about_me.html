@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Engr. Galang</title>
+  <link type = "text/css" rel = "stylesheet" href = "about_ju_style_sheet.css"/>
+ </head>
+ <body>
+
+<!-- Header – Name, site title, and a simple navigation menu (links can be placeholders) -->
+<!-- https://www.facebook.com/BanuaSaGana -->
+ <header> 
+  <h1>Engr. Julius Angelo D.J. Galang</h1>
+  <section>
+  <p>Instructor 7, Department of Indsutrial Engineering, CEAT-UPLB</p>
+  <p>Creative Operations Manager, Banua SaGana Kolab</p>
+  </section>
+  <nav>
+   <ul>
+    <li class="selected">Home</li>
+    <li><a href="https://ied.uplb.edu.ph/">UPLB IE</a></li>
+    <li><a href="banua_sagana_kolab.html">Banua SaGana Kolab</a></li>
+   </ul>
+  </nav>
+ </header>
+
+<!-- About Me – A short paragraph introducing the student with an image. -->
+
+ <article>
+ <h2>About Me</h2>
+  <p>
+  <img id="display-image" onclick="swapImage()" src="Ju.jpg" alt="It's Me!" height="180" width="185"/>
+  </p>
+  <script>
+   function swapImage() {
+   var imageDisplayed = document.getElementById('display-image');
+   if (imageDisplayed.src.match("Ju.jpg")) {
+   imageDisplayed.src = "Ju1.jpg";
+        }
+   else {
+   imageDisplayed.src = "Ju.jpg";
+        }
+   }
+   </script>
+ <p>Hi everyone, I am Julius Galang and these are some of the things about me.</p>
+ <h3>As an Instructor in UPLB, here is my short bionote:</h3>
+ <p>Engr. Julius Angelo Galang is an Instructor at the Department of Industrial Engineering University of the
+    Philippines Los Baños with a Bachelor’s degree in Industrial Engineering from 	the same University. He is currently
+    taking Master of Information Systems from the University of the Philippines Open University. He has held management
+    roles in manufacturing industries as well as in research in the academe. He also served as Systems & Management
+    Consultant for Proud Pinoy MSMEs.Currently, he engages in collaborative projects including 	the UP System wide
+    project for the development of the Budget Utilization and Liquidation System Analytics (BULSA) and 	Personnel
+  Unified Systems Outlook (PUSO).
+ </p>
+ <h3>I am also an aspiring Cultural Worker together with my fiancee.</h3>
+ <p>Julius Angelo Galang currently serves as the Creative Operations Manager of Banua SaGana Kolab, an organization
+    focusing on research and artistic collaborations on decolonization and food sovereignty. They have organized various
+    events such a "Bukas na Hapag", "Rice is Life" and "Gulay Pa More Makiling" in collaboration with various
+    organizations sharing the same advocacies.
+ </p>
+ </article>
+
+<!-- Hobbies & Interests – A list of at least three hobbies with brief descriptions. -->
+
+ <article1>
+     
+ <h2 class="hobbies">Hobbies & Interests</h2>
+
+ <section>
+ <section1>
+ <h3>Food Explorations</h3>
+ <p> <img class="small" src="food.jpg" alt="Our Forages" /></p>
+
+ </section1>
+ <section2>
+ <p>My Fiance and I have a great passion for food. I am a vegetarian while she if plant-based. We love to check out
+    restaurants and food places to taste various recipes and ways of cooking. Of couse we also do our own experiments
+    in cooking. I myself have a simple database of some recipes (not all) that we have tried. </p>
+ </section2>
+  <button onclick="showText()">Click for a fun fact</button>
+    <p id="hiddenText" style="display:none;"> I am a lacto-ovo sattvic vegetarian. I don't eat
+         fish, meat chicken, but I eat eggs and dairy but I don't eat onion and garlic.</p>
+
+    <script> function showText() {
+    document.getElementById("hiddenText").style.display = "block";
+    }
+    </script>
+ </section>
+
+ <section>
+ <section1>
+ <h3>Filipino Martial Arts</h3>
+ <video controls width="420">
+    <source src="arnis.mp4" type="video/mp4">
+
+    <!-- Fallback content for older browsers -->
+    Your browser does not support the video tag.
+ </video>
+
+ </section1>
+ <section2>
+  <p>I also happen to have developed an interest in studying FMA(Arnis/Kali/Eskrima) and have been doing self-study
+    since 2024. Not very consistent lately but trying to gain momentum so as to make it more of a routine. Nevertheless
+    I simply love practicing it and learning about its historical roots. I have a compilation of drills and combat
+    simulations which are actually a repository of links to reels posted by Masters and Blackbets. This is one aspect
+    of social media that I like a lot.</p>
+ </section2>
+ <section>
+
+ <section>
+ <section1>
+ <h3>Poetry and Theatre</h3>
+ <p> <img class="small" src="art.jpg" alt="KRPG" /></p>
+ </section1>
+ <section2>
+ <p>I am also into arts whether as an enthusiast or as a practicioner. I have been writing poems but I keep it to myself
+    all compiled in google sheet. Perhaps I'll make a website where I can share them someday. I also do performance arts
+    from time to time with my fiancee and have been in theatrical plays long before that.</p>
+ </section2>
+ </section>
+  
+ </article1>
+
+<!-- Contact Info – A section displaying an email address and social media links (placeholders). -->
+ <footer>
+  <section3>
+  <h2>Contact Me</h2>
+   <nav>
+    <ul>
+     <li>UP Email: jdgalang1@up.edu.ph</li>
+     <li>Personal Email: juliusangelogalang@gmail.com</li>
+     <li>Facebook Profile:<a href="https://www.facebook.com/juliusangelo.d.galang/"> Julius Angelo Galang</a></li>
+     <li>Contact Number: +639051481859</a></li>
+    </ul>
+   </nav>
+   <nav>
+    <ul>
+     <li>UPLB Address: Department of Industrial Engineering, Pili Drive, College Laguna</li>
+     <li>Home Address: 10963 Kanluran Rd Faculty Village, Batong Malake, Los Banos, Laguna</li>
+    </ul>
+   </nav>
+   </section3>
+ </footer>
+
+ </body>
+</html>
